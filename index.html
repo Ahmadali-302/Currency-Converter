@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="h-screen flex justify-center items-center bg-gray-100">
+    <div class="container text-center bg-white shadow-2xl rounded-2xl w-[400px] h-[350px] p-5">
+        <h1 class="text-2xl font-bold mb-6">Currency Converter</h1>
+
+        <form action="">
+            <div class="amount mb-4">
+                <p class="mb-2">Enter Amount</p>
+                <input type="text" value="100" class="border px-4 py-2 rounded">
+            </div>
+            <div class="dropdown mb-4 flex justify-center items-center gap-4">
+                <div class="from">
+                    <p class="mb-2">From</p>
+                    <div class="select-container flex items-center gap-2">
+                        <img src="https://flagsapi.com/US/flat/64.png" alt="" class="w-8 h-8">
+                        <select name="from" class="border px-2 py-1 rounded">
+                            
+                        </select>
+                    </div>
+                </div>
+
+                <i class="fa-solid fa-arrow-right-arrow-left"></i>
+
+                <div class="to">
+                    <p class="mb-2">To</p>
+                    <div class="select-container flex items-center gap-2">
+                        <img src="https://flagsapi.com/PK/flat/64.png" alt="" class="w-8 h-8">
+                        <select name="to" class="border px-2 py-1 rounded">
+                            
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="msg mb-4">1 USD = 270 PKR</div>
+            <button class="bg-blue-500 text-white px-4 py-2 rounded text-[1rem]">Get Exchange Rate</button>
+        </form>
+    </div>
+
+    <script src="codes.js"></script>
+    <script src="script.js"></script>
+</body>
+
+
+</html>
